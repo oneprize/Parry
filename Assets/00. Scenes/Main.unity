@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 222150991}
   - component: {fileID: 222150990}
   - component: {fileID: 222150989}
+  - component: {fileID: 222150994}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Throwable
@@ -342,6 +343,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222150994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222150988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f3172eb537da24b95b3486fb2e2926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parryDistance: 3
+  normalMaterial: {fileID: 2100000, guid: 63a6bf7d938bfd04eae1900d5b00c0bc, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 8b78e3c9d12245948b37ae8d9bf007cb, type: 2}
+  isParryWindow: 0
 --- !u!1 &469583416
 GameObject:
   m_ObjectHideFlags: 0
@@ -9060,9 +9077,10 @@ GameObject:
   - component: {fileID: 6453499335358801908}
   - component: {fileID: 6453499335358801909}
   - component: {fileID: 6453499335358801910}
+  - component: {fileID: 6453499335358801911}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9330,6 +9348,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6453499335358801909}
+--- !u!114 &6453499335358801911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964102743277157710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52993ce8d7fa7043a494a0f1eff5a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6453499335358801909}
+  equippedWeapon: {fileID: 6340734134577512420}
 --- !u!4 &6502182838955030229
 Transform:
   m_ObjectHideFlags: 0
