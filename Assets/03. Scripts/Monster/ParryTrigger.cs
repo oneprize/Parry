@@ -38,7 +38,7 @@ public class ParryTrigger : MonoBehaviour
         }
 
         // 플레이어에게 알림
-        PlayerParryController playerParry = player.GetComponent<PlayerParryController>();
+        PlayerParryControl playerParry = player.GetComponent<PlayerParryControl>();
         if (playerParry != null)
         {
             playerParry.CurrentParryTarget = this.gameObject;

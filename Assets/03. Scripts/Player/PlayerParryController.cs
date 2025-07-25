@@ -2,43 +2,19 @@ using UnityEngine;
 
 public class PlayerParryController : MonoBehaviour
 {
-    public Animator animator;                     // Slash 애니메이션용
-    public GameObject CurrentParryTarget;         // 현재 타겟 돌
-    public bool isParryAvailable = false;         // 패링 타이밍 플래그
-    public GameObject breakEffectPrefab;          // 파괴 이펙트
+    public Animator animator;
 
-    void Update()
+    public void PlayCounterAttack()
     {
-        if (isParryAvailable && Input.GetMouseButtonDown(0))
-        {
-            Parry();
-        }
+        animator.SetTrigger("ParrySlash");
+
+        // 콤보 연결 가능 상태 → 여기서 bool로 열거나 이후 입력 체크 가능
+        Invoke(nameof(EnableComboInput), 0.3f); // 타이밍 조정 가능
     }
 
-    void Parry()
+    private void EnableComboInput()
     {
-        Debug.Log("패링 입력됨! Slash 애니메이션 재생");
-
-        animator.SetTrigger("Slash"); // Slash 애니메이션 재생
-
-        // 돌 부수기
-        if (CurrentParryTarget != null)
-        {
-            Vector3 pos = CurrentParryTarget.transform.position;
-
-            if (breakEffectPrefab != null)
-                Instantiate(breakEffectPrefab, pos, Quaternion.identity);
-
-            // 돌에게 파괴 명령
-            ParryTrigger trigger = CurrentParryTarget.GetComponent<ParryTrigger>();
-            if (trigger != null)
-            {
-                trigger.Break();
-            }
-
-            // 초기화
-            CurrentParryTarget = null;
-            isParryAvailable = false;
-        }
+        Debug.Log("후속 콤보 입력 가능!");
+        // 이후 키 입력 받으면 콤보로 넘어가는 로직 작성 가능
     }
 }
