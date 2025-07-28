@@ -389,6 +389,11 @@ MonoBehaviour:
   handTransform: {fileID: 8153021304562542520}
   targetObject: {fileID: 487156580}
   throwDirection: {fileID: 238862450}
+  player: {fileID: 0}
+  parryDistance: 3
+  parryWindowTime: 0.7
+  normalMaterial: {fileID: 0}
+  highlightMaterial: {fileID: 0}
 --- !u!1001 &26768104
 PrefabInstance:
   m_ObjectHideFlags: 0
