@@ -74,6 +74,7 @@
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\03. Scripts\Player\FlightController.cs" />
     <Compile Include="Assets\03. Scripts\Monster\ParryEffectHandler.cs" />
     <Compile Include="Assets\03. Scripts\Player\PlayerParryController.cs" />
     <Compile Include="Assets\03. Scripts\Player\PlayerAttackController.cs" />
@@ -86,6 +87,7 @@
     <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\zhongli\readme【一定要看】.txt" />
     <None Include="Assets\01. Asset\Polytope Studio\Lowpoly_Village\Sources\Shaders\PT_Buildings_Glass_PBR.shader" />
+    <None Include="Assets\file\FlightController first.txt" />
     <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\01. Asset\Polytope Studio\Lowpoly_Environments\Sources\Shaders\PT_Vegetation_Plants_Shader.shader" />
     <None Include="Assets\01. Asset\Fantasy Skybox FREE\Readme.txt" />
@@ -601,6 +603,14 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
